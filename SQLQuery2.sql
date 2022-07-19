@@ -23,3 +23,7 @@ values('Shivaraj','Gowda','DGG','DGG','CG',491445,9689556677,'raj@gmail.com'),
 ('Aviral','Kumar','Raipur','Raipur','CG',492001,9644556677,'avi@gmail.com'),
 ('Nikhil','Yadav','Bhilai','Bhilai','CG',490020,9644556677,'nikhil@gmail.com');
 select * from AddressBook;
+
+--UC4 edit contact by person's name--
+update AddressBook set PhoneNumber=9752830300 where FirstName='Aviral';
+select * from AddressBook;
