@@ -46,3 +46,6 @@ select * from AddressBook order by FirstName;
 alter table Addressbook add ContactType varchar(100) not null default 'Friend';
 update AddressBook set ContactType = 'Family' where FirstName = 'Aviral';
 select * from AddressBook;
+
+--UC10 get contact count by type--
+select COUNT(*) as Type, ContactType from AddressBook group by ContactType;
