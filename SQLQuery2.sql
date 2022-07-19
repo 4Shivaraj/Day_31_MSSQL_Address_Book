@@ -27,3 +27,7 @@ select * from AddressBook;
 --UC4 edit contact by person's name--
 update AddressBook set PhoneNumber=9752830300 where FirstName='Aviral';
 select * from AddressBook;
+
+--UC5 delete existing contact using name--
+delete AddressBook where FirstName='Amar';
+select * from AddressBook;
